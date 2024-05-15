@@ -70,3 +70,12 @@ group :test do
 end
 
 gem "sidekiq", "~> 7.2"
+
+gem "haml-rails", "~> 2.1"
+gem 'html2haml', '~> 2.3'
+gem "rails_admin", "~> 3.0.beta2"
+gem "sassc-rails"
+
+gem "cancancan", "~> 3.5"
+
+gem "devise", "~> 4.9"
