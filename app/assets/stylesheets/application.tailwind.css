@@ -1,3 +1,7 @@
+@import "components/form-controls.css";
+
+@import "../../components/flash_component/flash_component.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

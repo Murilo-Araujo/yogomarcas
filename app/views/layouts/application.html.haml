@@ -9,9 +9,6 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", type: "module"
   %body
-    -# <p class="notice"><%= notice %></p>
-    -# <p class="alert"><%= alert %></p>
-    %p.notice= notice
-    %p.alert= alert
-
+    = turbo_frame_tag "flash" do
+      = render(FlashComponent.new(flash: flash))
     = yield
