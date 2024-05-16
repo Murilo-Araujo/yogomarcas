@@ -1,6 +1,6 @@
 <div class="flex items-center justify-center w-full h-screen flex-col bg-green-600 space-y-6">
   <div class="bg-white w-72 p-8 rounded-lg shadow-lg">
-    
+
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-field">
         <%= heroicon "mail", options: { class: "h-6 w-6 text-gray-400" } %>

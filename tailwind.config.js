@@ -12,7 +12,9 @@ module.exports = {
     './app/assets/stylesheets/**/*.{scss,sass,css}',
     './app/views/**/*.{erb,haml,html,slim,jbuilder}',
     './config/initializers/heroicon.rb',
-    './app/components/**/*.{rb,erb,haml,html,slim}'
+    './app/components/**/*.{rb,erb,haml,html,slim}',
+  //   locales i18n rails
+      './config/locales/**/*.{rb,yml}',
   ],
   theme: {
     extend: {

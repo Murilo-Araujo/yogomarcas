@@ -29,3 +29,17 @@
 
 en:
   hello: "Hello world"
+  header_component:
+    home: "Home"
+    log_out: "Log out"
+    sign_in: "Sign in"
+    sign_up: "Sign up"
+    talk_to_us: "Talk to us"
+    products: "Products"
+  home:
+    hero:
+      title: ""
+      started_in: ""
+      complete_service: ""
+      flavors: ""
+      tons_processed: ""

@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import Notification from "stimulus-notification"
 application.register('notification', Notification)
+
+import AnimatedNumber from '@stimulus-components/animated-number'
+application.register('animated-number', AnimatedNumber)

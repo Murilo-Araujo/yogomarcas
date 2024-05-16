@@ -1,0 +1,18 @@
+%header.h-20.sticky.top-0.z-50.items-center.flex.backdrop-blur-sm.w-full
+  .container.mx-auto
+    .grid.grid-cols-3.h-full
+      .flex.items-end
+        = link_to t(".home"), root_path, class: "text-gray-600 focus:outline-none text-xl font-medium rounded-lg pr-2 py-2.5 me-1 mb-2 hover:text-green-600 #{'text-green-500' if current_page?(root_path)}"
+        = link_to t(".products"), products_path, class: "text-gray-600 focus:outline-none text-xl font-medium rounded-lg px-2 py-2.5 me-1 mb-2 hover:text-green-600 #{'text-green-500' if current_page?(products_path)}"
+      .flex.items-end
+        = link_to root_path, class: "w-full justify-center flex" do
+          = image_tag "logo.png", class: "h-14 w-auto -mt-8"
+      .flex.items-end.justify-end
+        = link_to t(".talk_to_us"), nil, class: "text-gray-500 hover:underline underline-offset-1 focus:outline-none font-medium rounded-lg text-sm px-2 py-2.5 me-1.5 mb-2"
+        = link_to 'tel:+5511999999999', class: "text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-2.5 me-1.5 mb-2", target: "_blank" do
+          = heroicon "phone", variant: :solid, options: { class: "h-4 w-4" }
+        - if helpers.user_signed_in?
+          = button_to t(".log_out"), destroy_user_session_path, method: :delete, class: "text-blue-500 hover:bg-gray-200 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 me-1.5 mb-2"
+        - else
+          = link_to t(".sign_in"), new_user_session_path, class: "text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+          = link_to t(".sign_up"), new_user_registration_path, class: "focus:outline-none text-white font-medium rounded-lg text-sm px-5 py-2.5 me-1 mb-2 bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-800"

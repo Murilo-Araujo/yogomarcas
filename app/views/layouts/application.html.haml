@@ -1,6 +1,8 @@
 !!!
 %html
   %head
+    -# change web locale to pt-BR
+    %meta{:content => I18n.locale, :name => "web_locale"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Yogomarcas
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
@@ -8,7 +10,11 @@
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", type: "module"
+
+    %link{:href => "favicon.ico", :rel => "icon", :type => "image/x-icon"}/
   %body
+    - unless controller.controller_name == "sessions" || controller.controller_name == "registrations"
+      = render HeaderComponent.new
     = turbo_frame_tag "flash" do
       = render(FlashComponent.new(flash: flash))
     = yield

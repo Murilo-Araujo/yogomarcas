@@ -1,3 +1,22 @@
 pt-BR:
   email: E-mail
   password: Senha
+  header_component:
+    home: "Início"
+    log_out: "Sair"
+    sign_in: "Entrar"
+    sign_up: "Registrar-se"
+    talk_to_us: "Fale conosco"
+    products: "Produtos"
+  home:
+    hero:
+      title: Transforme sua Sorveteria com Nossos <span class="text-green-600">Mixes Premium</span>
+      subtitle: Mais do que fornecedores, somos sua família na produção de sorvetes.
+      description: Na Yogomarcas, acreditamos que cada sorveteria merece um toque especial. É por isso que oferecemos não apenas mixes de alta qualidade, mas também um suporte completo para ajudá-lo a desenvolver produtos únicos e facilitar sua produção. Junte-se a nós e sinta a diferença de ser parte da nossa família!
+      cta: Conheça nossos produtos
+      companies_served: Empresas atendidas mensalmente
+      years_experience: Anos de experiência
+      complete_service: Suporte Completo
+      complete_service_description: Auxiliamos no desenvolvimento de novos produtos e na eficiência da produção.
+      flavors: Sabores
+      tons_processed: Toneladas processadas
