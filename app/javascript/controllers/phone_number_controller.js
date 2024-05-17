@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import 'jquery-mask-plugin'
+import $ from 'jquery'
 
 export default class extends Controller {
   maskBehavior(val) {

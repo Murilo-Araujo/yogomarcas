@@ -7,6 +7,9 @@ import { application } from "./application"
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
+import PhoneNumberController from "./phone_number_controller"
+application.register("phone-number", PhoneNumberController)
+
 import Notification from "stimulus-notification"
 application.register('notification', Notification)
 

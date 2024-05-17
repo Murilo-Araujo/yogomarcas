@@ -20,3 +20,9 @@ pt-BR:
       complete_service_description: Auxiliamos no desenvolvimento de novos produtos e na eficiência da produção.
       flavors: Sabores
       tons_processed: Toneladas processadas
+    hero_form:
+      email: "E-mail"
+      phone: "Telefone"
+      name: "Nome"
+      subtitle: <span class="text-green-600">Ganhe uma Amostra Grátis!</span> Receba uma amostra grátis de um de nossos mixes premium.
+      cta: Ganhe uma amostra grátis

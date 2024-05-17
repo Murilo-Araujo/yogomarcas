@@ -43,3 +43,8 @@ en:
       complete_service: ""
       flavors: ""
       tons_processed: ""
+    hero_form:
+      email: ""
+      phone: ""
+      name: ""
+      subtitle: ""
