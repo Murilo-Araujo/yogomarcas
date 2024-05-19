@@ -59,3 +59,12 @@ en:
       rocket_description: ""
       truck_description: ""
       support_title: ""
+    product_customization:
+      title: ""
+      description: ""
+      search_title: ""
+      search_description: ""
+      flask_title: ""
+      flask_description: ""
+      see_more: ""
+      want_product_customization: ""

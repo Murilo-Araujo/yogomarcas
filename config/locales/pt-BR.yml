@@ -49,6 +49,19 @@ pt-BR:
       truck_description: "Com nossas bases prontas para uso, você pode simplificar sua produção e reduzir custos operacionais, permitindo que você se concentre no que realmente importa – criar sorvetes deliciosos."
       support_title: "Suporte Completo"
       support_description: "Oferecemos atendimento personalizado e suporte técnico para ajudá-lo em todas as etapas, desde a escolha do produto até a implementação na sua sorveteria."
+    product_customization:
+      title: "Personalização Sob Medida para Sua Sorveteria"
+      description: "Não nos limitamos a oferecer produtos prontos. Sabemos que cada sorveteria é única e que seus produtos devem refletir essa individualidade. Por isso, oferecemos um serviço exclusivo de personalização, onde criamos mixes com as fórmulas desenvolvidas especialmente para você."
+      search_title: "Entendimento das Necessidades"
+      search_description: "Trabalhamos de perto com você para entender suas necessidades e desejos específicos. Nossa equipe especializada está pronta para ouvir suas ideias e transformar sua visão em realidade."
+      flask_title: "Desenvolvimento da Fórmula"
+      flask_description: "Com base nas suas especificações, desenvolvemos uma fórmula exclusiva que atende exatamente às suas expectativas. Utilizamos ingredientes de alta qualidade para garantir que o resultado final seja um sorvete excepcional."
+      test_title: "Teste e Aprovação"
+      test_description: "Após a criação da fórmula, realizamos testes rigorosos para garantir a qualidade e o sabor. Você terá a oportunidade de provar e aprovar a fórmula antes de começarmos a produção em larga escala."
+      production_title: "Produção e Entrega"
+      production_description: "Uma vez aprovada, iniciamos a produção do seu pó personalizado. Garantimos uma entrega rápida e eficiente para que você possa começar a usar o produto o quanto antes."
+      see_more: "Saiba mais"
+      want_product_customization: "Quer criar um sorvete único para sua sorveteria?"
 
 
 
