@@ -68,3 +68,7 @@ en:
       flask_description: ""
       see_more: ""
       want_product_customization: ""
+    want_product_customization:
+      want_product_customization: ""
+    want_product_form:
+      cta: ""

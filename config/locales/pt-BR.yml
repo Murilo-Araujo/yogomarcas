@@ -1,6 +1,31 @@
 pt-BR:
+  activerecord:
+    models:
+      user: Usuário
+      contact: Contato
+    attributes:
+      user:
+        email: E-mail
+        password: Senha
+        name: Nome
+      contact:
+        name: Nome
+        email: E-mail
+        phone: Telefone
+        message: Mensagem
   email: E-mail
   password: Senha
+  shared:
+    email: E-mail
+    phone: Telefone
+    name: Nome
+    message: Mensagem
+    send: Enviar
+    contact_us: Fale Conosco
+    see_more: Ver mais
+    learn_more: Saiba mais
+
+
   header_component:
     home: "Início"
     log_out: "Sair"
@@ -62,6 +87,14 @@ pt-BR:
       production_description: "Uma vez aprovada, iniciamos a produção do seu pó personalizado. Garantimos uma entrega rápida e eficiente para que você possa começar a usar o produto o quanto antes."
       see_more: "Saiba mais"
       want_product_customization: "Quer criar um sorvete único para sua sorveteria?"
+    want_product_customization:
+      want_product_customization: "Quer criar um sorvete único para sua sorveteria?"
+      description: "Entre em contato conosco hoje mesmo e descubra como podemos ajudar a transformar suas ideias em deliciosas realidades."
+      cta: 'Solicitar Personalização'
+    want_product_form:
+      cta: "Solicitar Personalização"
+    product_costumization_feedback:
+      feedback: '"Trabalhar com a yogomarcas foi uma experiência incrível. Conseguimos criar um sabor magnífico que tem sido um sucesso entre nossos clientes. O suporte e a qualidade são incomparáveis."'
 
 
 
