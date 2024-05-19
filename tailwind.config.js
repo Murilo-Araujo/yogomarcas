@@ -45,7 +45,7 @@ module.exports = {
       },
       // Create your own at: https://javisperez.github.io/tailwindcolorshades
       colors: {
-        primary: colors.indigo,
+        primary: colors.green,
         danger: colors.rose,
         info: colors.blue,
         warning: colors.amber,

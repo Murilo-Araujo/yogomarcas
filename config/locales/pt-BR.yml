@@ -10,7 +10,7 @@ pt-BR:
     products: "Produtos"
   home:
     hero:
-      title: Transforme sua Sorveteria com Nossos <span class="text-green-600">Mixes Premium</span>
+      title: Transforme sua Sorveteria com Nossos <span class="text-primary-600">Mixes Premium</span>
       subtitle: Mais do que fornecedores, somos sua família na produção de sorvetes.
       description: Na Yogomarcas, acreditamos que cada sorveteria merece um toque especial. É por isso que oferecemos não apenas mixes de alta qualidade, mas também um suporte completo para ajudá-lo a desenvolver produtos únicos e facilitar sua produção. Junte-se a nós e sinta a diferença de ser parte da nossa família!
       cta: Conheça nossos produtos
@@ -24,5 +24,34 @@ pt-BR:
       email: "E-mail"
       phone: "Telefone"
       name: "Nome"
-      subtitle: <span class="text-green-600">Ganhe uma Amostra Grátis!</span> Receba uma amostra grátis de um de nossos mixes premium.
+      subtitle: <span class="text-primary-600">Ganhe uma Amostra Grátis!</span> Receba uma amostra grátis de um de nossos mixes premium.
       cta: Ganhe uma amostra grátis
+    why_us:
+      title: "Porque nós?"
+      description: Na nossa empresa, acreditamos que qualidade e relacionamento são essenciais. Oferecemos os melhores produtos do mercado e tratamos nossos clientes como família. Por isso, trabalhamos com exclusividade, atendendo apenas um cliente por cidade para garantir que cada sorveteria tenha o suporte necessário para prosperar sem competição desleal.
+      high_quality: Qualidade Superior
+      high_quality_description: Nossos produtos são feitos com ingredientes de alta qualidade para garantir que seu sorvete tenha um sabor excepcional e uma textura irresistível.
+      continuous_innovation: Inovação Contínua
+      continuous_innovation_description: Estamos constantemente desenvolvendo novos sabores e bases funcionais para atender às demandas do mercado e surpreender seus clientes.
+      simplified_logistics: Logística Simplificada
+      simplified_logistics_description: Com nossas bases prontas para uso, você pode simplificar sua produção e reduzir custos operacionais, permitindo que você se concentre no que realmente importa – criar sorvetes deliciosos.
+      complete_service: Suporte Completo
+      complete_service_description: Oferecemos atendimento personalizado e suporte técnico para ajudá-lo em todas as etapas, desde a escolha do produto até a implementação na sua sorveteria.
+    about_us:
+      title: "Criado para Sorveterias que Buscam Excelência"
+      description: "Focamos em oferecer produtos de alta qualidade e suporte técnico, ajudando sorveterias a alcançar o máximo potencial sem concorrência desleal."
+      cta: "Saiba Mais"
+      star_title: "Qualidade Superior"
+      star_description: "Nossos produtos são feitos com ingredientes de alta qualidade para garantir que seu sorvete tenha um sabor excepcional e uma textura irresistível."
+      rocket_title: "Inovação Contínua"
+      truck_title: "Logística Simplificada"
+      rocket_description: "Estamos constantemente desenvolvendo novos sabores e bases funcionais para atender às demandas do mercado e surpreender seus clientes."
+      truck_description: "Com nossas bases prontas para uso, você pode simplificar sua produção e reduzir custos operacionais, permitindo que você se concentre no que realmente importa – criar sorvetes deliciosos."
+      support_title: "Suporte Completo"
+      support_description: "Oferecemos atendimento personalizado e suporte técnico para ajudá-lo em todas as etapas, desde a escolha do produto até a implementação na sua sorveteria."
+
+
+
+
+
+
