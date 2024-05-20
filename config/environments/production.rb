@@ -90,8 +90,7 @@ Rails.application.configure do
   config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
   # Enable DNS rebinding protection and other `Host` header attacks.
-  # enable host: https://yogomarcas.onrender.com/
-  config.hosts = %w[yogomarcas.onrender.com www.yogomarcas.com]
+  config.hosts << "yogomarcas.onrender.com"
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 end
