@@ -15,7 +15,7 @@ services:
   - type: web
     name: yogomarcas_web
     runtime: docker
-    repo: https://github.com/codengage/procfy
+    repo: https://github.com/Murilo-Araujo/yogomarcas
     dockerfilePath: ./Dockerfile.staging
     dockerContext: .
     healthCheckPath: /up
@@ -24,8 +24,8 @@ services:
         value: 19adf48c5c874dd1b60e2c935daefb26
       - key: RAILS_ENV
         value: staging
-      - key: DEFAULT_HOST_NAME
-        value: yogomarcas.com
+#      - key: DEFAULT_HOST_NAME
+#        value: yogomarcas.com
       - key: DEFAULT_HOST_PROTOCOL
         value: https
       - key: MAILGUN_ENABLED
