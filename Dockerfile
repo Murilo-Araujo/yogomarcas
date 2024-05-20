@@ -24,7 +24,7 @@ RUN curl -SLf https://raw.githubusercontent.com/fullstaq-labs/fullstaq-ruby-serv
     apt-get install --assume-yes -q --no-install-recommends fullstaq-ruby-${RUBY_VERSION} && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt
 
-ARG BUNDLER_VERSION=2.4.22
+ARG BUNDLER_VERSION=2.5.3
 RUN gem install "bundler:~>$BUNDLER_VERSION" --no-document && \
     gem update --system && \
     gem cleanup
@@ -46,7 +46,7 @@ RUN curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v
 # App
 WORKDIR /app
 COPY ./Gemfile* /app/
-RUN bundle install --jobs $(nproc) --retry 5
+RUN bundle config --local without "production test omit" && bundle install --jobs $(nproc) --retry 5
 COPY package.json yarn.lock /app/
 RUN yarn install
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
