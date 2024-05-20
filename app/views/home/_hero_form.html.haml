@@ -1,5 +1,5 @@
-= form_with model: @contact, url: contacts_path, method: :post, remote: true, authenticity_token: true, class: 'w-full pl-12' do |f|
-  .space-y-6
+= form_with model: @contact, url: contacts_path, method: :post, remote: true, authenticity_token: true, class: 'w-full' do |f|
+  .space-y-6.p-6.bg-white.rounded-lg
     .text-2xl.font-bold.text-gray-900
       = t(".subtitle").html_safe
     .space-y-2
