@@ -29,5 +29,6 @@ module Yogomarcas
     config.i18n.default_locale = :'pt-BR'
 
 
+    config.active_job.queue_adapter = :sidekiq
   end
 end
