@@ -2,6 +2,10 @@
 set -e
 # Remove PID
 rm -f tmp/pids/server.pid
+
+# db:create
+bundle exec rails db:create
+
 # Migrations will be run on ALL instances
 if [ "${RAILS_DB_MIGRATE_ON_STARTUP}" = "true" ]
 then

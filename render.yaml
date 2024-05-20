@@ -1,11 +1,3 @@
-databases:
-  - name: yogomarcas_database
-    databaseName: yogomarcas-1d6f
-    user: yogomarcas-1d6f-user
-    ipAllowList:
-      - source: 0.0.0.0/0
-        description: everywhere
-
 services:
   - type: redis
     name: yogomarcas_redis
