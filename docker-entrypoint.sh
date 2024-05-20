@@ -7,9 +7,7 @@ rm -f tmp/pids/server.pid
 bundle exec rails db:create
 
 # Migrations will be run on ALL instances
-if [ "${RAILS_DB_MIGRATE_ON_STARTUP}" = "true" ]
-then
-  bundle exec rails db:migrate
-fi
+bundle exec rails db:migrate
+
 # Call CMD
 exec "$@"
