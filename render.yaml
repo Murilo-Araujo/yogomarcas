@@ -7,10 +7,10 @@ databases:
         description: everywhere
 
 services:
-  - type: redis
-    name: yogomarcas_redis
-    ipAllowList: [ ] # only allow internal connections
-    maxmemoryPolicy: noeviction # optional (defaults to allkeys-lru)
+#  - type: redis
+#    name: yogomarcas_redis
+#    ipAllowList: [ ] # only allow internal connections
+#    maxmemoryPolicy: noeviction # optional (defaults to allkeys-lru)
 
   - type: web
     name: yogomarcas_web
@@ -20,8 +20,6 @@ services:
     dockerContext: .
     healthCheckPath: /up
     envVars:
-      - key: ADOBE_CLIENT_ID
-        value: 19adf48c5c874dd1b60e2c935daefb26
       - key: RAILS_ENV
         value: staging
 #      - key: DEFAULT_HOST_NAME
@@ -52,18 +50,18 @@ services:
         fromDatabase:
           name: yogomarcas_database
           property: password
-      - key: REDIS_URL
-        fromService:
-          type: redis
-          name: yogomarcas_redis
-          property: connectionString
-      - key: REDIS_SIDEKIQ_URL
-        fromService:
-          type: redis
-          name: yogomarcas_redis
-          property: connectionString
-
+#      - key: REDIS_URL
+#        fromService:
+#          type: redis
+#          name: yogomarcas_redis
+#          property: connectionString
+#      - key: REDIS_SIDEKIQ_URL
+#        fromService:
+#          type: redis
+#          name: yogomarcas_redis
+#          property: connectionString
 #
+##
 #  - type: worker
 #    name: yogomarcas_worker
 #    runtime: docker
