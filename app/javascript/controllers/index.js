@@ -10,8 +10,12 @@ application.register("hello", HelloController)
 import PhoneNumberController from "./phone_number_controller"
 application.register("phone-number", PhoneNumberController)
 
+import MenuController from "./menu_controller"
+application.register("menu", MenuController)
+
 import Notification from "stimulus-notification"
 application.register('notification', Notification)
 
 import AnimatedNumber from '@stimulus-components/animated-number'
 application.register('animated-number', AnimatedNumber)
+
