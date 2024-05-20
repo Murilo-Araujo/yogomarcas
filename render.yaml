@@ -62,10 +62,7 @@ services:
           type: redis
           name: yogomarcas_redis
           property: connectionString
-      - key: RAILS_MAX_THREADS
-        value: "10"
-      - key: RAILS_MIN_THREADS
-        value: "5"
+
 #
 #  - type: worker
 #    name: yogomarcas_worker
