@@ -61,58 +61,58 @@ services:
           name: yogomarcas_redis
           property: connectionString
 
-#
-  - type: worker
-    name: yogomarcas_worker
-    runtime: docker
-    repo: https://https://github.com/Murilo-Araujo/yogomarcas
-    dockerfilePath: ./Dockerfile.staging
-    dockerContext: .
-    dockerCommand: "bundle exec sidekiq"
-    envVars:
-      - key: ADOBE_CLIENT_ID
-        value: 19adf48c5c874dd1b60e2c935daefb26
-      - key: RAILS_ENV
-        value: staging
-      - key: DEFAULT_HOST_NAME
-        value: yogomarcas.com
-      - key: DEFAULT_HOST_PROTOCOL
-        value: https
-      - key: MAILGUN_ENABLED
-        value: "true"
-      - key: RAILS_DB_MIGRATE_ON_STARTUP
-        value: "true"
-      - key: DATABASE_NAME
-        fromDatabase:
-          name: yogomarcas_database
-          property: database
-      - key: DATABASE_HOST
-        fromDatabase:
-          name: yogomarcas_database
-          property: host
-      - key: DATABASE_PORT
-        fromDatabase:
-          name: yogomarcas_database
-          property: port
-      - key: DATABASE_USERNAME
-        fromDatabase:
-          name: yogomarcas_database
-          property: user
-      - key: DATABASE_PASSWORD
-        fromDatabase:
-          name: yogomarcas_database
-          property: password
-      - key: REDIS_URL
-        fromService:
-          type: redis
-          name: yogomarcas_redis
-          property: connectionString
-      - key: REDIS_SIDEKIQ_URL
-        fromService:
-          type: redis
-          name: yogomarcas_redis
-          property: connectionString
-      - key: RAILS_MAX_THREADS
-        value: "10"
-      - key: RAILS_MIN_THREADS
-        value: "5"
+##
+#  - type: worker
+#    name: yogomarcas_worker
+#    runtime: docker
+#    repo: https://https://github.com/Murilo-Araujo/yogomarcas
+#    dockerfilePath: ./Dockerfile.staging
+#    dockerContext: .
+#    dockerCommand: "bundle exec sidekiq"
+#    envVars:
+#      - key: ADOBE_CLIENT_ID
+#        value: 19adf48c5c874dd1b60e2c935daefb26
+#      - key: RAILS_ENV
+#        value: staging
+#      - key: DEFAULT_HOST_NAME
+#        value: yogomarcas.com
+#      - key: DEFAULT_HOST_PROTOCOL
+#        value: https
+#      - key: MAILGUN_ENABLED
+#        value: "true"
+#      - key: RAILS_DB_MIGRATE_ON_STARTUP
+#        value: "true"
+#      - key: DATABASE_NAME
+#        fromDatabase:
+#          name: yogomarcas_database
+#          property: database
+#      - key: DATABASE_HOST
+#        fromDatabase:
+#          name: yogomarcas_database
+#          property: host
+#      - key: DATABASE_PORT
+#        fromDatabase:
+#          name: yogomarcas_database
+#          property: port
+#      - key: DATABASE_USERNAME
+#        fromDatabase:
+#          name: yogomarcas_database
+#          property: user
+#      - key: DATABASE_PASSWORD
+#        fromDatabase:
+#          name: yogomarcas_database
+#          property: password
+#      - key: REDIS_URL
+#        fromService:
+#          type: redis
+#          name: yogomarcas_redis
+#          property: connectionString
+#      - key: REDIS_SIDEKIQ_URL
+#        fromService:
+#          type: redis
+#          name: yogomarcas_redis
+#          property: connectionString
+#      - key: RAILS_MAX_THREADS
+#        value: "10"
+#      - key: RAILS_MIN_THREADS
+#        value: "5"
