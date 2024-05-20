@@ -24,10 +24,10 @@ RUN curl -SLf https://raw.githubusercontent.com/fullstaq-labs/fullstaq-ruby-serv
     apt-get install --assume-yes -q --no-install-recommends fullstaq-ruby-${RUBY_VERSION} && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt
 
-ARG BUNDLER_VERSION=2.5.3
-RUN gem install "bundler:~>$BUNDLER_VERSION" --no-document && \
-    gem update --system && \
-    gem cleanup
+#ARG BUNDLER_VERSION=2.5.3
+#RUN gem install "bundler:~>$BUNDLER_VERSION" --no-document && \
+#    gem update --system && \
+#    gem cleanup
 
 ARG NODE_VERSION=16.20.2
 RUN curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
