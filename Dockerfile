@@ -46,7 +46,7 @@ RUN curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v
 # App
 WORKDIR /app
 COPY ./Gemfile* /app/
-RUN bundle config --local without "production test omit" && bundle install --jobs $(nproc) --retry 5
+RUN bundle config --local without "production test" && bundle install --jobs $(nproc) --retry 5
 COPY package.json yarn.lock /app/
 RUN yarn install
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
