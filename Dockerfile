@@ -47,12 +47,12 @@ RUN curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v
 WORKDIR /app
 COPY ./Gemfile* /app/
 RUN bundle config --local without "production test omit" && bundle install --jobs $(nproc) --retry 5
-RUN rails assets:precompile
 COPY package.json yarn.lock /app/
 RUN yarn install
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
 COPY . /app
 
+RUN bin/rails assets:precompile
 RUN yarn build
 RUN yarn build:css
 RUN chmod ug+x /app/docker-entrypoint.sh
