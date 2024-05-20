@@ -16,12 +16,12 @@ services:
     name: yogomarcas_web
     runtime: docker
     repo: https://github.com/Murilo-Araujo/yogomarcas
-    dockerfilePath: ./Dockerfile.staging
+    dockerfilePath: ./Dockerfile.production
     dockerContext: .
     healthCheckPath: /up
     envVars:
       - key: RAILS_ENV
-        value: staging
+        value: production
 #      - key: DEFAULT_HOST_NAME
 #        value: yogomarcas.com
       - key: DEFAULT_HOST_PROTOCOL
