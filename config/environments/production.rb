@@ -87,6 +87,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
   # Enable DNS rebinding protection and other `Host` header attacks.
   # enable host: https://yogomarcas.onrender.com/
   config.hosts = %w[yogomarcas.onrender.com www.yogomarcas.com]
