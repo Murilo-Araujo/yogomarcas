@@ -14,7 +14,7 @@
     %link{:href => "favicon.ico", :rel => "icon", :type => "image/x-icon"}/
   %body
     - unless controller.controller_name == "sessions" || controller.controller_name == "registrations"
-      = render HeaderComponent.new
+      = render Header::HeaderComponent.new
     = turbo_frame_tag "flash" do
       = render(FlashComponent.new(flash: flash))
     = yield
