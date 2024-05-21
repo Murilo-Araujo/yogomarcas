@@ -81,3 +81,5 @@ gem "view_component", "~> 3.12"
 gem "heroicon", "~> 1.0"
 
 gem "lucide-rails", "~> 0.4.0"
+
+gem "redcarpet", "~> 3.6"

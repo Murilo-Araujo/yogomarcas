@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
+
+  # replace the name blogs to blog
+  resources :blogs, param: :slug, path: :blog do
+    resources :comments
+  end
+
   resources :contacts
   resources :products
+  # only: /users/sign_in and /users/sign_out
   devise_for :users
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
