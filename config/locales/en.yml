@@ -72,3 +72,6 @@ en:
       want_product_customization: ""
     want_product_form:
       cta: ""
+  blogs:
+    show:
+      time_to_read: ""

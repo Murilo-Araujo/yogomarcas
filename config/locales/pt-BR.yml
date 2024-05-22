@@ -54,13 +54,14 @@ pt-BR:
     learn_more: Saiba mais
 
 
-  header_component:
-    home: "Início"
-    log_out: "Sair"
-    sign_in: "Entrar"
-    sign_up: "Registrar-se"
-    talk_to_us: "Fale conosco"
-    products: "Produtos"
+  header:
+    header_component:
+      home: "Início"
+      log_out: "Sair"
+      sign_in: "Entrar"
+      sign_up: "Registrar-se"
+      talk_to_us: "Fale conosco"
+      products: "Produtos"
   home:
     hero:
       title: Transforme sua Sorveteria com Nossos <span class="text-primary-600">Mixes Premium</span>
@@ -124,6 +125,9 @@ pt-BR:
     product_costumization_feedback:
       feedback: '"Trabalhar com a yogomarcas foi uma experiência incrível. Conseguimos criar um sabor magnífico que tem sido um sucesso entre nossos clientes. O suporte e a qualidade são incomparáveis."'
       feedback_info: "Proprietário da Gelatos de luxo"
+  blogs:
+    show:
+      time_to_read: "%{time} min de leitura"
 
 
 

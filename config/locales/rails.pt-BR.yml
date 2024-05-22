@@ -49,6 +49,7 @@ pt-BR:
       month: "%b/%Y"
       long_month: "%B/%Y"
       day_of_month: "%d/%m"
+      blog: "%B %d, %Y"
     month_names:
       -
       - janeiro

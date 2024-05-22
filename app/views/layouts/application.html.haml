@@ -4,7 +4,9 @@
     -# change web locale to pt-BR
     %meta{:content => I18n.locale, :name => "web_locale"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Yogomarcas
+    %title
+      = content_for?(:title) ? yield(:title) : "Yogomarcas"
+    %meta{:content => content_for?(:meta) ? yield(:meta) : "Yogomarcas", :name => "description"}/
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
     = csrf_meta_tags
     = csp_meta_tag
@@ -13,11 +15,18 @@
 
     %link{:href => "favicon.ico", :rel => "icon", :type => "image/x-icon"}/
   %body
-    - if controller.controller_name == "blogs"
-      = render BlogHeaderComponent.new(blog: @blog)
 
-    - elsif !(
+    - if controller.controller_name == "blogs"
+      = render Header::BlogHeaderComponent.new
+      .pt-28
+        = yield
+
+    - elsif !( controller.controller_name == "registrations" || controller.controller_name == "sessions" )
       = render Header::HeaderComponent.new
+      = yield
+    - else
+      = yield
     = turbo_frame_tag "flash" do
       = render(FlashComponent.new(flash: flash))
-    = yield
+
+
