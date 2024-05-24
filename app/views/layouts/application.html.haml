@@ -1,5 +1,5 @@
 !!!
-%html
+%html.scroll-smooth
   %head
     -# change web locale to pt-BR
     %meta{:content => I18n.locale, :name => "web_locale"}/
@@ -18,15 +18,12 @@
 
     - if controller.controller_name == "blogs"
       = render Header::BlogHeaderComponent.new
-      .pt-28
-        = yield
-
     - elsif !( controller.controller_name == "registrations" || controller.controller_name == "sessions" )
       = render Header::HeaderComponent.new
+    %main
       = yield
-    - else
-      = yield
-    = turbo_frame_tag "flash" do
-      = render(FlashComponent.new(flash: flash))
+
+      = turbo_frame_tag "flash" do
+        = render(FlashComponent.new(flash: flash))
 
 

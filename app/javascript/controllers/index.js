@@ -10,8 +10,17 @@ application.register("hello", HelloController)
 import PhoneNumberController from "./phone_number_controller"
 application.register("phone-number", PhoneNumberController)
 
-import MenuController from "./menu_controller"
-application.register("menu", MenuController)
+import BlogController from "./blog_controller"
+application.register("blog", BlogController)
+
+import HeaderController from "./header_controller"
+application.register("header", HeaderController)
+
+import HeaderBlogController from "./header_blog_controller"
+application.register("header-blog", HeaderBlogController)
+
+import MenuController from "./blog_controller"
+application.register("blog-controller", MenuController)
 
 import Notification from "stimulus-notification"
 application.register('notification', Notification)

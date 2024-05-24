@@ -128,6 +128,7 @@ pt-BR:
   blogs:
     show:
       time_to_read: "%{time} min de leitura"
+      index: "ÍNDICE"
 
 
 
