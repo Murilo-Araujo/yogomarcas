@@ -76,6 +76,8 @@ en:
     show:
       time_to_read: ""
       index: ""
+    related_articles:
+      related_articles: ""
   footer:
     description: ""
     about: "about"
@@ -83,3 +85,4 @@ en:
     blog: ""
     faqs: ""
     contact: ""
+  read_in: "Read in %{time} minutes"

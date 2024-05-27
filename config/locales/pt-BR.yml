@@ -130,6 +130,8 @@ pt-BR:
     show:
       time_to_read: "%{time} min de leitura"
       index: "ÍNDICE"
+    related_articles:
+      related_articles: "Artigos relacionados"
   footer:
     description: "Na Yogomarcas, acreditamos que cada sorveteria merece um toque especial. Junte-se a nós e sinta a diferença de ser parte da nossa família!"
     about: "Sobre nós"
@@ -137,6 +139,7 @@ pt-BR:
     blog: "Blog"
     faqs: "FAQs"
     contact: "Contatos"
+  read_in: "Ler em %{time} minutos"
 
 
 
