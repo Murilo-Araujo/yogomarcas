@@ -16,7 +16,7 @@
     %link{:href => "favicon.ico", :rel => "icon", :type => "image/x-icon"}/
   %body
 
-    - if controller.controller_name == "blogs"
+    - if %w[blogs categories].include?(controller.controller_name)
       = render Header::BlogHeaderComponent.new
     - elsif !( controller.controller_name == "registrations" || controller.controller_name == "sessions" )
       = render Header::HeaderComponent.new
@@ -24,7 +24,7 @@
     %main
       = yield
 
-    - if controller.controller_name == "blogs"
+    - if %w[blogs categories].include?(controller.controller_name)
       = render Footer::BlogFooterComponent.new
     - else
       = render Footer::FooterComponent.new

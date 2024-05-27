@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :categories
+  resources :categories, param: :slug
 
   # replace the name blogs to blog
   resources :blogs, param: :slug, path: :blog do
