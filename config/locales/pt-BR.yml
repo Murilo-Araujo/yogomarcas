@@ -53,6 +53,7 @@ pt-BR:
     see_more: Ver mais
     learn_more: Saiba mais
     read_more: Ler mais
+    talk_to_us: "Fale conosco"
 
 
   header:
@@ -140,6 +141,7 @@ pt-BR:
     faqs: "FAQs"
     contact: "Contatos"
   read_in: "Ler em %{time} minutos"
+
 
 
 

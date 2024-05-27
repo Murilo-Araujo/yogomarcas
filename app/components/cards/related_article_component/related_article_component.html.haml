@@ -2,4 +2,4 @@
   = image_tag @article.header_image, class: 'object-cover object-center rounded-lg shadow-lg h-40 w-full'
   %h2.text-2xl.font-bold= @article.title
   %p.text-gray-500= @article.meta
-  = link_to t('read_in', time: reading_time(@article.content).to_i), blog_path(@article.slug), class: 'flex text-blue-700 text-lg underline'
+  = link_to t('read_in', time: reading_time(@article.content).to_i), blog_path(@article.slug), class: 'flex text-blue-500 hover:text-blue-700 text-lg underline'
