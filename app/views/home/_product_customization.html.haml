@@ -6,7 +6,7 @@
           = image_tag "product-customization.png", class: "object-cover object-center w-full rounded-lg h-3/4"
       .space-y-12
         .space-y-4
-          .leading-tight.text-4xl.font-extrabold
+          %h1.leading-tight.text-4xl.font-extrabold
             = t(".title").html_safe
           .text-xl.text-gray-500
             = t(".description").html_safe
@@ -16,7 +16,7 @@
             .flex.space-x-4
               = lucide_icon "search-check", class: "min-h-8 min-w-8 text-primary-600 p-2 bg-primary-300 rounded-full"
               .space-y-2
-                .leading-tight.text-xl.font-bold
+                %h2.leading-tight.text-xl.font-bold
                   = t(".search_title").html_safe
                 .text-base.font-normal.text-gray-500
                   = t(".search_description").html_safe
@@ -24,7 +24,7 @@
             .flex.space-x-4
               = lucide_icon "flask-conical", class: "min-h-8 min-w-8 text-primary-600 p-2 bg-primary-300 rounded-full"
               .space-y-2
-                .leading-tight.text-xl.font-bold
+                %h2.leading-tight.text-xl.font-bold
                   = t(".flask_title").html_safe
                 .text-base.font-normal.text-gray-500
                   = t(".flask_description").html_safe
@@ -32,7 +32,7 @@
             .flex.space-x-4
               = lucide_icon "clipboard", class: "min-h-8 min-w-8 text-primary-600 p-2 bg-primary-300 rounded-full"
               .space-y-2
-                .leading-tight.text-xl.font-bold
+                %h2.leading-tight.text-xl.font-bold
                   = t(".test_title").html_safe
                 .text-base.font-normal.text-gray-500
                   = t(".test_description").html_safe
@@ -40,7 +40,7 @@
             .flex.space-x-4
               = lucide_icon "factory", class: "min-h-8 min-w-8 text-primary-600 p-2 bg-primary-300 rounded-full"
               .space-y-2
-                .leading-tight.text-xl.font-bold
+                %h2.leading-tight.text-xl.font-bold
                   = t(".production_title").html_safe
                 .text-base.font-normal.text-gray-500
                   = t(".production_description").html_safe

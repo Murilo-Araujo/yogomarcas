@@ -1,7 +1,7 @@
 = form_with model: @contact, url: contacts_path, method: :post, remote: true, authenticity_token: true, class: 'w-full' do |f|
   .space-y-6.p-6.bg-white.rounded-lg
     .text-2xl.font-bold.text-gray-900
-      = t(".subtitle").html_safe
+      %h2= t(".subtitle").html_safe
     .space-y-2
       = f.label :name, t(".name"), class: 'block mb-2 text-sm font-medium text-gray-900'
       .relative.flex.items-center

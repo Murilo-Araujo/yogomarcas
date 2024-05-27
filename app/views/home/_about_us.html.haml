@@ -2,7 +2,7 @@
   .container.mx-auto
     .grid.grid-cols-1.py-32.gap-24.lg:grid-cols-3
       .flex.flex-col.justify-center
-        .leading-tight.text-4xl.font-extrabold
+        %h1.leading-tight.text-4xl.font-extrabold
           = t(".title").html_safe
         .text-xl.font-normal.text-gray-500.text-justify.mt-6
           = t(".description").html_safe
@@ -18,14 +18,14 @@
         .space-y-2{class: 'h-1/2'}
           = lucide_icon "trophy", class: "h-12 w-12 text-primary-600 p-2 bg-primary-300 rounded-md"
           .leading-tight.text-xl.font-bold
-            = t(".star_title").html_safe
+            %h2= t(".star_title").html_safe
           .text-base.font-normal.text-gray-500
             = t(".star_description").html_safe
 
         .space-y-2{class: 'h-1/2'}
           = lucide_icon "truck", class: "h-12 w-12 text-primary-600 p-2 bg-primary-300 rounded-md"
           .leading-tight.text-xl.font-bold
-            = t(".truck_title").html_safe
+            %h2= t(".truck_title").html_safe
           .text-base.font-normal.text-gray-500
             = t(".truck_description").html_safe
 
@@ -33,13 +33,13 @@
         .space-y-2{class: 'h-1/2'}
           = lucide_icon "rocket", class: "h-12 w-12 text-primary-600 p-2 bg-primary-300 rounded-md"
           .leading-tight.text-xl.font-bold
-            = t(".rocket_title").html_safe
+            %h2= t(".rocket_title").html_safe
           .text-base.font-normal.text-gray-500
             = t(".rocket_description").html_safe
 
         .space-y-2{class: 'h-1/2'}
           = lucide_icon "headset", class: "h-12 w-12 text-primary-600 p-2 bg-primary-300 rounded-md"
           .leading-tight.text-xl.font-bold
-            = t(".support_title").html_safe
+            %h2= t(".support_title").html_safe
           .text-base.font-normal.text-gray-500
             = t(".support_description").html_safe
