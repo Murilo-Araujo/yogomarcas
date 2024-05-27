@@ -76,3 +76,10 @@ en:
     show:
       time_to_read: ""
       index: ""
+  footer:
+    description: ""
+    about: "about"
+    services: ""
+    blog: ""
+    faqs: ""
+    contact: ""

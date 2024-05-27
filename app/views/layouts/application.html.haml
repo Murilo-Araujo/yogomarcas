@@ -20,8 +20,14 @@
       = render Header::BlogHeaderComponent.new
     - elsif !( controller.controller_name == "registrations" || controller.controller_name == "sessions" )
       = render Header::HeaderComponent.new
+
     %main
       = yield
+
+    - if controller.controller_name == "blogs"
+      = render Footer::BlogFooterComponent.new
+    - else
+      = render Footer::FooterComponent.new
 
       = turbo_frame_tag "flash" do
         = render(FlashComponent.new(flash: flash))

@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   # only: /users/sign_in and /users/sign_out
   devise_for :users
 
+  resources :about, only: [:index]
+  resources :services, only: [:index]
+  resources :faqs, only: [:index]
+  resources :contact_informations, only: [:index]
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
