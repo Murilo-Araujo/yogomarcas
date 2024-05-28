@@ -25,6 +25,9 @@ application.register("blog-controller", MenuController)
 import Notification from "stimulus-notification"
 application.register('notification', Notification)
 
+import AcordionController from "./accordion_controller"
+application.register("accordion", AcordionController)
+
 import AnimatedNumber from '@stimulus-components/animated-number'
 application.register('animated-number', AnimatedNumber)
 
