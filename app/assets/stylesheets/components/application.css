@@ -1,0 +1,3 @@
+.container {
+    @apply sm:px-2;
+}
