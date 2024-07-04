@@ -1,9 +1,10 @@
-services:
-  - type: redis
-    name: yogomarcas_redis
-    ipAllowList: [ ] # only allow internal connections
-    maxmemoryPolicy: noeviction # optional (defaults to allkeys-lru)
+databases:
+  - name: yogomarcas_database
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: everywhere
 
+services:
   - type: web
     name: yogomarcas_web
     runtime: docker
@@ -41,13 +42,3 @@ services:
         fromDatabase:
           name: yogomarcas_database
           property: password
-      - key: REDIS_URL
-        fromService:
-          type: redis
-          name: yogomarcas_redis
-          property: connectionString
-      - key: REDIS_SIDEKIQ_URL
-        fromService:
-          type: redis
-          name: yogomarcas_redis
-          property: connectionString
