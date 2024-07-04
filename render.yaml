@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: yogomarcas_web
+    name: yogomarcas
     runtime: docker
     repo: https://github.com/Murilo-Araujo/yogomarcas
     dockerfilePath: ./Dockerfile.production
