@@ -3,8 +3,7 @@ set -e
 # Remove PID
 rm -f tmp/pids/server.pid
 
-# db:create
-bundle exec rails db:prepare
+# Migrations will be run on ALL instances
 bundle exec rails db:migrate
 
 # Call CMD
