@@ -12,7 +12,6 @@ services:
     dockerfilePath: ./Dockerfile.production
     dockerContext: .
     healthCheckPath: /up
-    startCommand: "bundle exec rails server -b 0.0.0.0 -p 3000"
     envVars:
       - key: RAILS_ENV
         value: production
