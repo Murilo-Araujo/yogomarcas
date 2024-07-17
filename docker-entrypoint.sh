@@ -4,6 +4,7 @@ set -e
 rm -f tmp/pids/server.pid
 
 # Migrations will be run on ALL instances
+bundle exec rails db:create
 bundle exec rails db:migrate
 
 # Call CMD
