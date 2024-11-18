@@ -5,8 +5,10 @@ export default class extends Controller {
     connect() {
 
         window.addEventListener("scroll", function () {
-            const header = document.querySelector('header');
-            header.classList.toggle('scroll', window.scrollY > 40);
+            const header = document.querySelectorAll('header');
+            header.forEach(function (element) {
+                element.classList.toggle('scroll', window.scrollY > 150);
+            });
         });
     }
 

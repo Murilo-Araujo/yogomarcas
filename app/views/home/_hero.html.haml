@@ -7,7 +7,7 @@
             = t(".title").html_safe
           %p.text-xl.text-gray-500.text-justify
             = t(".description").html_safe
-        .w-full.bg-white.p-8.rounded-lg.grid.grid-cols-4
+        .w-full.bg-white.p-8.rounded-lg.grid.grid-cols-1.md:grid-cols-4.gap-4
           .space-y-2
             .leading-none.text-2xl.font-bold.items-center.flex.justify-center
               = render Stimulus::AnimatedNumberComponent.new(start_value: 0, end_value: 200, duration: 2000)

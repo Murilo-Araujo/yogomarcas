@@ -291,11 +291,6 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     sexp_processor (4.17.1)
-    sidekiq (7.2.4)
-      concurrent-ruby (< 2)
-      connection_pool (>= 2.3.0)
-      rack (>= 2.2.4)
-      redis-client (>= 0.19.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -366,7 +361,6 @@ DEPENDENCIES
   redis (>= 4.0.1)
   sassc-rails
   selenium-webdriver
-  sidekiq (~> 7.2)
   sprockets-rails
   stimulus-rails
   turbo-rails

@@ -19,7 +19,10 @@
     - if %w[blogs categories].include?(controller.controller_name)
       = render Header::BlogHeaderComponent.new
     - elsif !( controller.controller_name == "registrations" || controller.controller_name == "sessions" )
-      = render Header::HeaderComponent.new
+      .hidden.md:block
+        = render Header::HeaderComponent.new
+      .block.md:hidden
+        -# = render 'sidenav'
 
     %main
       = yield

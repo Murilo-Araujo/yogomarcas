@@ -1,19 +1,2 @@
-%h1 Listing products
-
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
-
-  %tbody
-    - @products.each do |product|
-      %tr
-        %td= link_to 'Show', product
-        %td= link_to 'Edit', edit_product_path(product)
-        %td= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
-
-= link_to 'New Product', new_product_path
+= image_tag image_path('base-hero.svg'), class: 'w-full min-h-screen object-cover hidden object-center md:block'
+= image_tag image_path('base-hero-mobile.svg'), class: 'w-full min-h-screen object-cover block object-center md:hidden'

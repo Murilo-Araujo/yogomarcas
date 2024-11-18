@@ -1,8 +1,8 @@
 <footer class="p-4 bg-gray-50 mt-32 md:p-8 lg:p-10">
   <div class="mx-auto container max-w-screen-xl text-center">
-    <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900">
+    <%= link_to root_path, class:"flex justify-center items-center text-2xl font-semibold text-gray-900" do %>
       <%= image_tag "logo.png", alt: "Yogomarcas", class: "h-12" %>
-    </a>
+    <% end %>
     <p class="my-6 text-gray-500"><%= t("footer.description") %></p>
     <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 space-x-4 md:space-x-6">
       <li>
