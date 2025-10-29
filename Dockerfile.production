@@ -2,7 +2,7 @@
 FROM buildpack-deps:20.04
 
 ARG RUBY_VERSION=3.3.0-jemalloc
-ENV RAILS_ENV=development
+ENV RAILS_ENV=production
 ENV GEM_HOME /usr/local/bundle
 ENV BUNDLE_PATH="$GEM_HOME"
 ENV BUNDLE_SILENCE_ROOT_WARNING=1
@@ -46,7 +46,7 @@ RUN curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v
 # App
 WORKDIR /app
 COPY ./Gemfile* /app/
-RUN bundle config --local without "production test omit" && bundle install --jobs $(nproc) --retry 5
+RUN bundle config --local without "development test omit" && bundle install --jobs $(nproc) --retry 5
 COPY package.json yarn.lock /app/
 RUN yarn install
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
