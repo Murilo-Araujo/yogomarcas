@@ -26,7 +26,8 @@ Rails.application.configure do
   # config.public_file_server.enabled = false
 
   # Compress CSS using a preprocessor.
-  # config.assets.css_compressor = :sass
+  # Disable Sass compression since Tailwind already minifies CSS
+  config.assets.css_compressor = nil
 
   # Do not fall back to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -89,10 +90,12 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
-
   # Enable DNS rebinding protection and other `Host` header attacks.
-  config.hosts = %w[yogomarcas.onrender.com www.yogomarcas.com yogomarcas-production.up.railway.app]
+  config.hosts = %w[yogomarcas.onrender.com www.yogomarcas.com]
+  # Allow Railway generated domains (they change dynamically)
+  config.hosts << /.*\.up\.railway\.app$/
+  # Allow Railway internal domains  
+  config.hosts << /.*\.railway\.internal$/
   # Skip DNS rebinding protection for the default health check endpoint.
   config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 

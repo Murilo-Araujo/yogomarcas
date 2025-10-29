@@ -1,7 +1,7 @@
 # This Dockerfile uses Fullstaq Ruby with jemalloc and only supports amd64.
 FROM buildpack-deps:20.04
 
-ARG RUBY_VERSION=3.3.0-jemalloc
+ARG RUBY_VERSION=3.3.6-jemalloc
 ENV RAILS_ENV=production
 ENV GEM_HOME /usr/local/bundle
 ENV BUNDLE_PATH="$GEM_HOME"
@@ -24,12 +24,12 @@ RUN curl -SLf https://raw.githubusercontent.com/fullstaq-labs/fullstaq-ruby-serv
     apt-get install --assume-yes -q --no-install-recommends fullstaq-ruby-${RUBY_VERSION} && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt
 
-ARG BUNDLER_VERSION=2.5.3
+ARG BUNDLER_VERSION=2.6.3
 RUN gem install "bundler:~>$BUNDLER_VERSION" --no-document && \
     gem update --system && \
     gem cleanup
 
-ARG NODE_VERSION=20.12.2
+ARG NODE_VERSION=18.20.0
 RUN curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1 --no-same-owner \
   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" \
@@ -43,22 +43,19 @@ RUN curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v
   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg \
   && rm yarn-v$YARN_VERSION.tar.gz
 
-# App
+# Application setup
 WORKDIR /app
 COPY ./Gemfile* /app/
-RUN bundle config --local without "development test omit" && bundle install --jobs $(nproc) --retry 5
 COPY package.json yarn.lock /app/
+RUN bundle config --local without "development test omit" && bundle install --jobs $(nproc) --retry 5
 RUN yarn install
 COPY docker-entrypoint.sh /app/docker-entrypoint.sh
 COPY . /app
 
-RUN bin/rails assets:precompile
-RUN yarn build
-RUN yarn build:css
+RUN SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
 RUN chmod ug+x /app/docker-entrypoint.sh
 
 ENTRYPOINT [ "/app/docker-entrypoint.sh" ]
+CMD [ "bin/rails", "s", "-b", "0.0.0.0" ]
 
 EXPOSE 3000
-
-CMD [ "bin/rails", "s", "-p", "3000", "-b", "0.0.0.0" ]

@@ -3,8 +3,6 @@ builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile.production"
 
 [deploy]
-healthcheckPath = "/up"
-healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
 
@@ -21,10 +19,6 @@ value = "true"
 [[deploy.environmentVariables]]
 name = "RAILS_LOG_TO_STDOUT"
 value = "true"
-
-[[deploy.environmentVariables]]
-name = "PORT"
-value = "3000"
 
 [[deploy.environmentVariables]]
 name = "WEB_CONCURRENCY"
