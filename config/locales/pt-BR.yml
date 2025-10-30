@@ -66,22 +66,22 @@ pt-BR:
       products: "Produtos"
   home:
     hero:
-      title: Transforme sua Sorveteria com Nossos <span class="text-primary-600">Mixes Premium</span>
+      title: Transforme sua Sorveteria com Nossa<br/><span class="text-primary-500">Base Para Sorvete</span>
       subtitle: Mais do que fornecedores, somos sua família na produção de sorvetes.
-      description: Na Yogomarcas, acreditamos que cada sorveteria merece um toque especial. É por isso que oferecemos não apenas mixes de alta qualidade, mas também um suporte completo para ajudá-lo a desenvolver produtos únicos e facilitar sua produção. Junte-se a nós e sinta a diferença de ser parte da nossa família!
+      description: Na Yogomarcas, acreditamos que cada sorveteria merece um toque especial. É por isso que oferecemos não apenas bases para sorvete, mas também um suporte completo para ajudá-lo a desenvolver novos sabores de sorvete únicos e facilitar sua produção. Junte-se a nós e sinta a diferença de ser parte da nossa família!
       cta: Conheça nossos produtos
       companies_served: Empresas atendidas mensalmente
       years_experience: Anos de experiência
       complete_service: Suporte Completo
       complete_service_description: Auxiliamos no desenvolvimento de novos produtos e na eficiência da produção.
       flavors: Sabores
-      tons_processed: Toneladas processadas
+      tons_processed: Toneladas vendidas
     hero_form:
       email: "E-mail"
       phone: "Telefone"
       name: "Nome"
-      subtitle: <span class="text-primary-600">Ganhe uma Amostra Grátis!</span> Receba uma amostra grátis de um de nossos mixes premium.
-      cta: Ganhe uma amostra grátis
+      subtitle: <span class="text-primary-500">Ganhe uma Amostra Grátis!</span> Receba uma amostra grátis das nossas bases de sorvete.
+      cta: Quero minha amostra!
     why_us:
       title: "Porque nós?"
       description: Na nossa empresa, acreditamos que qualidade e relacionamento são essenciais. Oferecemos os melhores produtos do mercado e tratamos nossos clientes como família. Por isso, trabalhamos com exclusividade, atendendo apenas um cliente por cidade para garantir que cada sorveteria tenha o suporte necessário para prosperar sem competição desleal.
@@ -95,29 +95,30 @@ pt-BR:
       complete_service_description: Oferecemos atendimento personalizado e suporte técnico para ajudá-lo em todas as etapas, desde a escolha do produto até a implementação na sua sorveteria.
     about_us:
       title: "Criado para Sorveterias que Buscam Excelência"
-      description: "Focamos em oferecer produtos de alta qualidade e suporte técnico, ajudando sorveterias a alcançar o máximo potencial sem concorrência desleal."
-      cta: "Saiba Mais"
+      description: "Somos indústria e fornecedor de Base Para Sorvete em pó para soft serve e gelato. Produtos estáveis, alta performance e suporte técnico B2B para você padronizar sabor, textura e rendimento."
+      cta: "Ver Bases de Sorvete"
       star_title: "Qualidade Superior"
-      star_description: "Nossos produtos são feitos com ingredientes de alta qualidade para garantir que seu sorvete tenha um sabor excepcional e uma textura irresistível."
+      star_description: "Nossas Bases de Sorvete usam ingredientes de padrão industrial para entregar sabor consistente e textura cremosa. Mais overrun, menos cristais de gelo e padronização de lote."
       rocket_title: "Inovação Contínua"
       truck_title: "Logística Simplificada"
-      rocket_description: "Estamos constantemente desenvolvendo novos sabores e bases funcionais para atender às demandas do mercado e surpreender seus clientes."
-      truck_description: "Com nossas bases prontas para uso, você pode simplificar sua produção e reduzir custos operacionais, permitindo que você se concentre no que realmente importa – criar sorvetes deliciosos."
+      rocket_description: "Novos sabores e bases funcionais (zero lactose, vegana, sem açúcar) + personalização de receitas sob demanda. Esteja sempre à frente do mercado e surpreenda seus clientes."
+      truck_description: "Base Para Sorvete em pó com preparo simples (pó + água/leite), prazo de validade estendido e alto rendimento por kg. Reduza custos operacionais e foque no que importa: produzir e vender."
       support_title: "Suporte Completo"
-      support_description: "Oferecemos atendimento personalizado e suporte técnico para ajudá-lo em todas as etapas, desde a escolha do produto até a implementação na sua sorveteria."
+      support_description: "Atendimento consultivo do início ao fim: escolha da Base de Sorvete, ajuste de proporção, temperatura e overrun, configuração de máquina soft serve e fichas técnicas para sua equipe."
     product_customization:
-      title: "Personalização Sob Medida para Sua Sorveteria"
-      description: "Não nos limitamos a oferecer produtos prontos. Sabemos que cada sorveteria é única e que seus produtos devem refletir essa individualidade. Por isso, oferecemos um serviço exclusivo de personalização, onde criamos mixes com as fórmulas desenvolvidas especialmente para você."
+      title: "Base De Sorvete Personalizada para Sua Sorveteria"
+      description: "Desenvolvemos sua Base Para Sorvete personalizada, base de sorvete, em pó, sob medida, a partir da sua receita, com textura, rendimento e sabor padronizados para soft serve, gelato ou sorbet. Ideal para o seu próprio sabor e sem complicação."
       search_title: "Entendimento das Necessidades"
-      search_description: "Trabalhamos de perto com você para entender suas necessidades e desejos específicos. Nossa equipe especializada está pronta para ouvir suas ideias e transformar sua visão em realidade."
-      flask_title: "Desenvolvimento da Fórmula"
-      flask_description: "Com base nas suas especificações, desenvolvemos uma fórmula exclusiva que atende exatamente às suas expectativas. Utilizamos ingredientes de alta qualidade para garantir que o resultado final seja um sorvete excepcional."
-      test_title: "Teste e Aprovação"
-      test_description: "Após a criação da fórmula, realizamos testes rigorosos para garantir a qualidade e o sabor. Você terá a oportunidade de provar e aprovar a fórmula antes de começarmos a produção em larga escala."
+      search_description: "Briefing técnico para mapear público, perfil sensorial, rendimento desejado (kg), equipamentos (soft serve/gelato) e custos-alvo — tudo para a sua base personalizada."
+      flask_title: "Desenvolvimento da Fórmula em Pó"
+      flask_description: "Criamos a sua fórmula exclusiva de Base de Sorvete em pó, ajustando sólidos, emulsificantes e estabilizantes para atingir cremosidade, overrun e consistência ideais."
+      test_title: "Teste, Ajustes e Aprovação"
+      test_description: "Enviamos amostra do mix (preparo simples: pó + água/leite). Realizamos testes e ajustamos proporção, temperatura e overrun até a aprovação final."
       production_title: "Produção e Entrega"
-      production_description: "Uma vez aprovada, iniciamos a produção do seu pó personalizado. Garantimos uma entrega rápida e eficiente para que você possa começar a usar o produto o quanto antes."
-      see_more: "Saiba mais"
-      want_product_customization: "Quer criar um sorvete único para sua sorveteria?"
+      production_description: "Produção do seu pó personalizado com padronização de lotes. Logística ágil para todo o Brasil."
+      see_more: "Solicitar desenvolvimento da minha base"
+      want_product_customization: "Quer criar uma Base Para Sorvete exclusiva para a sua sorveteria?"
+
     want_product_customization:
       want_product_customization: "Quer criar um sorvete único para sua sorveteria?"
       description: "Entre em contato conosco hoje mesmo e descubra como podemos ajudar a transformar suas ideias em deliciosas realidades."

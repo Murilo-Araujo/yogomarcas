@@ -52,7 +52,18 @@ module.exports = {
             },
             // Create your own at: https://javisperez.github.io/tailwindcolorshades
             colors: {
-                primary: colors.green,
+                primary: {
+                    50:  '#f3f2f7',
+                    100: '#e6e5f0',
+                    200: '#d3d1e5',
+                    300: '#b8b6d8',
+                    400: '#938ec8',
+                    500: '#6760b7',
+                    600: '#4f47a3',
+                    700: '#403a88',
+                    800: '#322c6d',
+                    900: '#242050',
+                },
                 danger: colors.rose,
                 info: colors.blue,
                 warning: colors.amber,

@@ -13,7 +13,8 @@
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", type: "module"
 
-    %link{:href => "favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+    %link{:href => "favicon.png", :rel => "icon", :type => "image/png"}/
+    %link{:href => "favicon.png", :rel => "shortcut icon", :type => "image/png"}/
   %body
 
     - if %w[blogs categories].include?(controller.controller_name)
@@ -34,5 +35,9 @@
 
       = turbo_frame_tag "flash" do
         = render(FlashComponent.new(flash: flash))
+
+    -# WhatsApp button - only show on non-blog pages
+    - unless %w[blogs categories].include?(controller.controller_name)
+      = render Ui::WhatsappButtonComponent.new(phone_number: "554532541200")
 
 
