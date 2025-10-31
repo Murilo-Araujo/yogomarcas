@@ -1,2 +1,8 @@
-= image_tag image_path('base-hero.svg'), class: 'w-full min-h-screen object-cover hidden object-center md:block'
-= image_tag image_path('base-hero-mobile.svg'), class: 'w-full min-h-screen object-cover block object-center md:hidden'
+.w-full.h-screen.flex.flex-col.justify-between.overflow-hidden{ class: 'bg-[#a7caec]'}
+  .flex.flex-col.items-center.text-center.pt-16.flex-shrink-0
+    %h2.text-6xl.md:text-7xl.text-white.font-league-spartan{ style: "font-weight: 700; letter-spacing: 0.01em" }
+      YOGOMARCAS
+    %h1.text-lg.md:text-4xl.uppercase.font-tt-chocolates{ class: 'text-[#23286b]', style: "font-weight: 700; letter-spacing: 0.3em;" }
+      BASES PARA SORVETES
+  .flex.justify-center.items-end.flex-1.min-h-0
+    = image_tag "pacote.png", class: "w-[66%] max-h-full object-contain drop-shadow-2xl"

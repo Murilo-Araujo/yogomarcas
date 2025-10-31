@@ -31,3 +31,9 @@ application.register("accordion", AcordionController)
 import AnimatedNumber from '@stimulus-components/animated-number'
 application.register('animated-number', AnimatedNumber)
 
+import IridescenceController from "./iridescence_controller"
+application.register("iridescence", IridescenceController)
+
+import ColorBendsController from "./color_bends_controller"
+application.register("color-bends", ColorBendsController)
+

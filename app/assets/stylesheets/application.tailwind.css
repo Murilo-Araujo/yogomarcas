@@ -1,6 +1,7 @@
 @import "../css/components/form-controls.css";
 @import "../css/components/blog.css";
 @import "../css/components/application.css";
+@import "./components/custom_fonts.css";
 
 @import "../../components/flash_component/flash_component.css";
 @import "../../components/header/header_component.css";

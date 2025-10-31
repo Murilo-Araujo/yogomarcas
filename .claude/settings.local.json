@@ -3,7 +3,8 @@
   "permissions": {
     "allow": [
       "Bash(asdf set:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(cp:*)"
     ],
     "deny": []
   }

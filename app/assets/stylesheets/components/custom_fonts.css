@@ -1,0 +1,43 @@
+/* Custom font definitions */
+
+/* TT Chocolates font faces */
+@font-face {
+  font-family: 'TT Chocolates';
+  src: url('../fonts/TTChocolates-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Chocolates';
+  src: url('../fonts/TTChocolates-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Chocolates';
+  src: url('../fonts/TTChocolates-DemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Chocolates';
+  src: url('../fonts/TTChocolates-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font utility classes */
+.font-tt-chocolates {
+  font-family: 'TT Chocolates', 'Montserrat', 'Arial Black', sans-serif;
+}
+
+.font-league-spartan {
+  font-family: 'League Spartan', 'Arial', sans-serif;
+}
